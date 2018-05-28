@@ -14,12 +14,10 @@ const initialState = {
 // first instance argument.
 const actions = {
   increment(rootless, amount = 1) {
-    const nextCount = rootless.getState().count + amount;
-    rootless.setState({ count: nextCount });
+    rootless.setState(state => ({ count: state.count + amount }));
   },
   decrement(rootless, amount = 1) {
-    const nextCount = rootless.getState().count - amount;
-    rootless.setState({ count: nextCount });
+    rootless.setState(state => ({ count: state.count - amount }));
   },
   // The instance argument exposes the other actions,
   // which you can use to create compound actions.

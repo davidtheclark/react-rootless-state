@@ -8,7 +8,7 @@ class Incrementer extends React.Component {
   }
 
   addOne() {
-    this.props.increment(1);
+    this.props.increment();
   }
 
   render() {

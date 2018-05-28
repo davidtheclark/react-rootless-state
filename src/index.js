@@ -83,7 +83,11 @@ class RootlessState {
   }
 
   setState(updater) {
-    this.state = extend(this.state, updater);
+    if (typeof updater === 'function') {
+      this.state = extend(updater(this.getState()));
+    } else {
+      this.state = extend(this.state, updater);
+    }
     this.update();
   }
 
