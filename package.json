@@ -1,0 +1,46 @@
+{
+  "name": "react-rootless-state",
+  "version": "0.1.0",
+  "description": "A simple React state container that lives outside the component tree",
+  "module": "dist/react-rootless-state.es.js",
+  "main": "dist/react-rootless-state.js",
+  "umd:main": "dist/react-rootless-state.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo examples/counter/index.js -l -- -t babelify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtheclark/react-rootless-state.git"
+  },
+  "keywords": [
+    "react",
+    "state",
+    "context",
+    "redux"
+  ],
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "author": "David Clark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidtheclark/react-rootless-state/issues"
+  },
+  "homepage": "https://github.com/davidtheclark/react-rootless-state#readme",
+  "peerDependencies": {
+    "react": ">=15.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "budo": "^11.2.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}
